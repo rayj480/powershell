@@ -22,12 +22,12 @@ Connect-SPOService -Url $AdminSiteUrl -Credential $cred
 
 # Begin the process
 
-$loadInfo1 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
-$loadInfo2 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")
-$loadInfo3 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
+#$loadInfo1 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client")
+#$loadInfo2 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.Runtime")
+#$loadInfo3 = [System.Reflection.Assembly]::LoadWithPartialName("Microsoft.SharePoint.Client.UserProfiles")
 
 # Convert the Password to a secure string, then zero out the cleartext version ;)
-$sstr = ConvertTo-SecureString -string $AdminPass -AsPlainText -Force
+#$sstr = ConvertTo-SecureString -string $AdminPass -AsPlainText -Force
 #$AdminPass = ""
 
 # Take the AdminAccount and the AdminAccount password, and create a credential
